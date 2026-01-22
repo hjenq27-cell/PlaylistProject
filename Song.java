@@ -26,6 +26,7 @@ public class Song {
 
 
 
+    }
 
      /**
       * Methods-- what will you want each Song to do?
@@ -35,5 +36,23 @@ public class Song {
       * What kind of mutator (setter) methods will you need?
       */
 
+     public String getName() {
+         return name;
+     }
 
+     public String isLiked() {
+         if (liked) {
+             return "Yes";
+         } else {
+             return "No";
+         }
+     }
+
+     public boolean getLiked() {
+         return liked;
+     }
+     
+     public int getDuration() {
+         return duration;
+     }
 }
