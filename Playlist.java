@@ -19,7 +19,7 @@ public class Playlist {
       * then use additional methods to add Songs in one-by-one
       */
     public Playlist(){
-
+        ArrayList<Song> Songs = new ArrayList<Song>();
 
     }
 
@@ -27,7 +27,7 @@ public class Playlist {
 
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
-       * Adding a song
+       * Adding a songgit
        * 'liking' a song
        * Removing a specific song
        * Examining all Songs (a String return or void print makes sense here)
@@ -35,4 +35,28 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
+    public void add(Song mysong){
+        Songs.add(mysong);
+    }
+
+    public void like(Song mysong){
+        Songs.get(0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
