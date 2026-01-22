@@ -51,8 +51,14 @@ public class Song {
      public boolean getLiked() {
          return liked;
      }
-     
+
      public int getDuration() {
          return duration;
+     }
+
+
+
+     public void setLiked(boolean likeStatus) {
+         liked = likeStatus;
      }
 }
