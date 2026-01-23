@@ -39,6 +39,12 @@ public class Playlist {
         Songs.add(mysong);
     }
 
+
+    public Song getSong(int index){
+        return Songs.get(index);
+    }
+
+
     public void like(Song mysong){
         Songs.get(Songs.indexOf(mysong)).setLiked(true);;
     }
@@ -50,6 +56,10 @@ public class Playlist {
     public void playlist(){
         System.out.println(Songs);
     }
+
+
+
+
 
     public void liked(){
         ArrayList<Song> Liked = new ArrayList<Song>();
