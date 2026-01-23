@@ -15,11 +15,13 @@ public class PlaylistTester {
         System.out.println("Adding songs to the Playlist...\n");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
-         * is something like...
+         * is something like...`
          */
         p.add(new Song("fur elise", "Beethoven", 180));
         p.add(new Song("Rap Snitch Knishes", "MF Doom", 173));
         p.add(new Song("I Just Might", "Bruno Mars", 213));
+        p.add(new Song("Blinding Lights", "The Weeknd", 200));
+        p.add(new Song("Levitating", "Dua Lipa", 203));
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
