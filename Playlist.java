@@ -43,7 +43,31 @@ public class Playlist {
         Songs.get(0);
     }
 
+    public void remove(Song mysong){
+        Songs.remove(mysong);
+    }
 
+    public void playlist(){
+        System.out.println(Songs);
+    }
+
+    public void liked(){
+        ArrayList<Song> Liked = new ArrayList<Song>();
+        for (int i = 0; i<Songs.size(); i++){
+            if (Songs.get(i).isLiked().equals("Yes")){
+                Liked.add(Songs.get(i));
+            }
+
+        }
+    }
+    public String duration(){
+        int seconds = 0;
+        for (int i = 0; i<Songs.size(); i++){
+            
+
+        }
+        return "";
+    }
 
 
 
