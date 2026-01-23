@@ -40,7 +40,7 @@ public class Playlist {
     }
 
     public void like(Song mysong){
-        Songs.get(0);
+        Songs.get().setLiked(true);;
     }
 
     public void remove(Song mysong){
@@ -59,6 +59,7 @@ public class Playlist {
             }
 
         }
+        System.out.println(Liked);
     }
     public String duration(){
         int seconds = 0;
@@ -68,7 +69,6 @@ public class Playlist {
         }
         return "";
     }
-
 
 
 
