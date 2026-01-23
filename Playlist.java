@@ -19,7 +19,7 @@ public class Playlist {
       * then use additional methods to add Songs in one-by-one
       */
     public Playlist(){
-        ArrayList<Song> Songs = new ArrayList<Song>();
+        Songs = new ArrayList<Song>();
 
     }
 
