@@ -76,6 +76,15 @@ public class Playlist {
         return " " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
     }
 
+    public void removeUnliked(){
+        for (int i = 0; i<Songs.size(); i++){
+            if (Songs.get(i).isLiked().equals("No")){
+                Songs.remove(i);
+            }
+
+        }
+    }
+
 
 
 
