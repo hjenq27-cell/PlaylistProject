@@ -40,7 +40,7 @@ public class Playlist {
     }
 
     public void like(Song mysong){
-        Songs.get().setLiked(true);;
+        Songs.get(Songs.indexOf(mysong)).setLiked(true);;
     }
 
     public void remove(Song mysong){
@@ -63,11 +63,17 @@ public class Playlist {
     }
     public String duration(){
         int seconds = 0;
+        int minutes = 0;
+        int hours = 0;
         for (int i = 0; i<Songs.size(); i++){
-            
+            seconds += Songs.get(i).getDuration();
 
         }
-        return "";
+        minutes += seconds/60;
+        seconds = seconds%60;
+        hours += minutes/60;
+        minutes = minutes%60;
+        return " " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
     }
 
 
