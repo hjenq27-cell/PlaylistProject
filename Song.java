@@ -40,6 +40,11 @@ public class Song {
          return name;
      }
 
+     public String getArtist() {
+         return artist;
+     }
+
+
      public String isLiked() {
          if (liked) {
              return "Yes";
