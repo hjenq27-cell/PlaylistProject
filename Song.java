@@ -17,10 +17,16 @@ public class Song {
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
+    public Song(String myname, String myartist, int myduration) {
+        name = myname;
+        artist = myartist;
+        duration = myduration;
+        liked = false; // Songs are not liked by default
 
 
 
 
+    }
 
      /**
       * Methods-- what will you want each Song to do?
@@ -30,5 +36,34 @@ public class Song {
       * What kind of mutator (setter) methods will you need?
       */
 
+     public String getName() {
+         return name;
+     }
 
+     public String getArtist() {
+         return artist;
+     }
+
+
+     public String isLiked() {
+         if (liked) {
+             return "Yes";
+         } else {
+             return "No";
+         }
+     }
+
+     public boolean getLiked() {
+         return liked;
+     }
+
+     public int getDuration() {
+         return duration;
+     }
+
+
+
+     public void setLiked(boolean likeStatus) {
+         liked = likeStatus;
+     }
 }
