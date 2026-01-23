@@ -17,9 +17,9 @@ public class PlaylistTester {
          * Add some songs here. Note that the format for adding a Song to a Playlist p
          * is something like...
          */
-        p.addSong(new Song("fur elise", "Beethoven", 180));
-        p.addSong(new Song("Rap Snitch Knishes", "MF Doom", 173));
-        p.addSong(new Song("I Just Might", "Bruno Mars", 213));
+        p.add(new Song("fur elise", "Beethoven", 180));
+        p.add(new Song("Rap Snitch Knishes", "MF Doom", 173));
+        p.add(new Song("I Just Might", "Bruno Mars", 213));
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
@@ -52,7 +52,7 @@ public class PlaylistTester {
 
         System.out.println("\nPrinting the total duration of all songs...\n");
         //Note that the format should look something like minutes:seconds
-        p.printTotalDuration();
+        p.duration();
 
         System.out.println("\nRemoving all unliked songs from the playlist...\n");
         //This should be doable with a single method call
