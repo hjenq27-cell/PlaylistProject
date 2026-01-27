@@ -71,7 +71,10 @@ public class Playlist {
             }
 
         }
-        System.out.println(Liked);
+        for(int i = 0; i < Liked.size(); i++) {
+            Song curerrentSong = Liked.get(i);
+            System.out.println(curerrentSong.getName() + "\n");
+        }
     }
     public String duration(){
         int seconds = 0;
