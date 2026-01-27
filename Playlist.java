@@ -57,7 +57,9 @@ public class Playlist {
         System.out.println(Songs);
     }
 
-
+    public int size(){
+        return Songs.size();
+    }
 
 
 
