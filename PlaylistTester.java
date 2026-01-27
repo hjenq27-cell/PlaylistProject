@@ -24,7 +24,11 @@ public class PlaylistTester {
         p.add(new Song("Levitating", "Dua Lipa", 203));
 
         System.out.println("Printing the songs...\n");
-        p.playlist();
+        for(int i = 0; i < p.size(); i++) {
+            Song curerrentSong = p.getSong(i);
+            System.out.println(curerrentSong.getName() + "\n");
+            
+        }
 
 
 
