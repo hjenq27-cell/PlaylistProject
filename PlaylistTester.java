@@ -37,7 +37,7 @@ public class PlaylistTester {
         //Print out all the songs in the playlist to verify it's working correctly
         for(int i = 0; i < p.size(); i++) {
             Song curerrentSong = p.getSong(i);
-            System.out.println(curerrentSong + "\n");
+            System.out.println(curerrentSong.getName() + "\n");
             
         }
 
@@ -48,7 +48,7 @@ public class PlaylistTester {
 
         for(int i = 0; i < p.size(); i++) {
             Song curerrentSong = p.getSong(i);
-            System.out.println(curerrentSong + "\n");
+            System.out.println(curerrentSong.getName() + "\n");
             
         }
 
@@ -57,7 +57,7 @@ public class PlaylistTester {
 
         for(int i = 0; i < p.size(); i++) {
             Song curerrentSong = p.getSong(i);
-            System.out.println(curerrentSong + "\n");
+            System.out.println(curerrentSong.getName() + "\n");
             
         }
 
@@ -75,7 +75,7 @@ public class PlaylistTester {
 
         for(int i = 0; i < p.size(); i++) {
             Song curerrentSong = p.getSong(i);
-            System.out.println(curerrentSong + "\n");
+            System.out.println(curerrentSong.getName() + "\n");
             
         }
     }
