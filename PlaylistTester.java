@@ -36,7 +36,8 @@ public class PlaylistTester {
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
         for(int i = 0; i < p.size(); i++) {
-            
+            Song curerrentSong = p.getSong(i);
+            System.out.println(curerrentSong + "\n");
             
         }
 
@@ -45,14 +46,20 @@ public class PlaylistTester {
         Song s3 = p.getSong(1);
         p.like(s3);
 
-        System.out.println("Printing the songs...\n");
-        p.playlist();
+        for(int i = 0; i < p.size(); i++) {
+            Song curerrentSong = p.getSong(i);
+            System.out.println(curerrentSong + "\n");
+            
+        }
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         p.remove(s1);
 
-        System.out.println("Printing the songs...\n");
-        p.playlist();
+        for(int i = 0; i < p.size(); i++) {
+            Song curerrentSong = p.getSong(i);
+            System.out.println(curerrentSong + "\n");
+            
+        }
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
@@ -66,8 +73,10 @@ public class PlaylistTester {
         //This should be doable with a single method call
         p.removeUnliked();
 
-        System.out.println("Printing all songs...\n");
-        //This should now look like only the liked songs list from before
-        p.playlist();
+        for(int i = 0; i < p.size(); i++) {
+            Song curerrentSong = p.getSong(i);
+            System.out.println(curerrentSong + "\n");
+            
+        }
     }
 }
