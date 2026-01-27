@@ -35,7 +35,10 @@ public class PlaylistTester {
         p.like(s2);
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
-        p.playlist();
+        for(int i = 0; i < p.size(); i++) {
+            
+            
+        }
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
